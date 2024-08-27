@@ -26,7 +26,8 @@ document.addEventListener("DOMContentLoaded", function() {
       li.appendChild(a);
       navUl.appendChild(li);
     });
-  
+ 
+    
     nav.appendChild(navUl);
     document.body.appendChild(nav);
   
@@ -62,8 +63,9 @@ document.addEventListener("DOMContentLoaded", function() {
       {
         title: 'Contact Me',
         content: `
-          <p>Email: example@example.com</p>
-          <p>Phone: 123-456-7890</p>
+          <p>Email: salma253salem@gmail.com</p>
+          <p>Phone: +974 77083573</p>
+          <p>Github: <a href="https://github.com/salma253mohamed" target="_blank">github.com/salma253mohamed</a></p>
         `
       }
     ];
