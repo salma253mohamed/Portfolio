@@ -1,77 +1,87 @@
 /* General styling for body and layout */
 body {
-    font-family: 'Times New Roman', Times, serif;
-    margin: 0;
-    padding: 0;
-    background-color: #f0f8ff;  /* Light blue background */
-  }
-  
-  header {
-    background-color: #3399ff;  /* Blue header */
-    padding: 20px;
-    color: white;
-    text-align: center;
-  }
-  
-  h1 {
-    font-size: 2em;
-    margin-bottom: 0;
-  }
-  
-  /* Vertical navigation styling */
-  nav {
-    background-color: #e0e0e0; /* Light gray background */
-    padding: 10px;
-    width: 100px; /* Fixed width for vertical navigation */
-    float: left; /* Float navigation to the left */
-    height: 100vh; /* Full height of the viewport */
-  }
-  
-  nav ul {
-    list-style: none;
-    margin: 0;
-    padding: 0;
-  }
-  
-  nav li {
-    margin-bottom: 10px; /* Space between items */
-  }
-  
-  nav a {
-    color: #333; /* Dark text for links */
-    text-decoration: none;
-    display: block; /* Make links block elements */
-    padding: 10px; /* Padding for better touch target */
-  }
-  
-  /* Main content styling */
-  main {
-    margin-left: 220px; /* Offset main content by navigation width */
-    padding: 20px;
-  }
-  
-  .card {
-    background-color: white; /* White background for the card */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1); /* 3D shadow effect */
-    padding: 20px; /* Padding inside the card */
-    margin-bottom: 20px; /* Space between cards */
-  }
-  
-  h2 {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    color: #3399ff; /* Blue headings */
-  }
-  
-  p {
-    color: #666; /* Lighter text for body */
-  }
-  
-  footer {
-    background-color: #3399ff; /* Blue footer */
-    color: white;
-    text-align: center;
-    padding: 10px;
-  }
-  
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f0f8ff;  /* Light blue background */
+}
+
+header {
+  background-color: #3399ff;  /* Blue header */
+  padding: 20px;
+  color: white;
+  text-align: center;
+}
+
+h1 {
+  font-size: 2em;
+  margin-bottom: 0;
+}
+
+/* Center the navigation horizontally */
+nav {
+  background-color: #3399ff; /* Match with header background */
+  padding: 10px 0;
+  display: flex;
+  justify-content: center; /* Center nav horizontally */
+}
+
+nav ul {
+  display: flex; /* Horizontal layout */
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  margin: 0 15px; /* Space between items */
+}
+
+nav a {
+  color: white; /* White text */
+  text-decoration: none;
+  display: block; /* Make links block elements */
+  padding: 10px;
+  background-color: #666; /* Grey background for each link */
+  border-radius: 5px; /* Rounded corners */
+}
+
+/* Styling for About Me Section */
+.about-section {
+  display: flex;
+  align-items: center; /* Vertically align the image and text */
+  padding: 0; /* Remove top padding to remove gap */
+}
+
+.about-section img {
+  width: 500px; /* Fixed width for the image */
+  height: auto;
+  margin-right: 20px; /* Space between image and text */
+  border-radius: 10px; /* Rounded image corners */
+}
+
+.about-text {
+  max-width: 600px;
+}
+
+h2 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #3399ff; /* Blue headings */
+}
+
+p {
+  color: #666; /* Lighter text for body */
+}
+
+/* Remove margin between header and section */
+section.card {
+  margin-top: 0;
+}
+
+footer {
+  background-color: #3399ff; /* Blue footer */
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
